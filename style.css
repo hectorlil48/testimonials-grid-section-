@@ -64,7 +64,8 @@ img {
   border-radius: 50%;
 }
 
-.testimonial-title h2 {
+.testimonial-title h1,
+h2 {
   font-size: 1rem;
   font-weight: 400;
   line-height: 13px;
