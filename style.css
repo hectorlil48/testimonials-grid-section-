@@ -25,6 +25,7 @@ body {
   min-height: 100vh;
   background-color: var(--light-grayish-blue);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -129,13 +130,14 @@ img {
   padding-right: 20px;
 }
 
-/* .attribution {
-    font-size: 11px;
-    text-align: center;
-  }
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  } */
+.attribution {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
 /* Keyframes for the transition */
 @keyframes fadeInUp {
