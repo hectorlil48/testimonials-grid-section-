@@ -49,7 +49,7 @@ img {
   border-radius: 8px;
   color: var(--white);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.8s ease, box-shadow 0.3s ease;
 }
 
 .testimonial-header {
@@ -170,7 +170,7 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
     align-items: stretch;
     grid-row: auto auto auto;
-    animation: fadeInUp 0.5s ease-in-out;
+    animation: fadeInUp 0.8s ease-in-out;
   }
 
   .daniel {
@@ -198,7 +198,7 @@ h2 {
 @media (min-width: 1024px) {
   .testimonials {
     grid-template-columns: repeat(4, 1fr);
-    animation: fadeInDown 0.5s ease-in-out;
+    animation: fadeInDown 0.8s ease-in-out;
   }
 
   .daniel {
@@ -228,5 +228,16 @@ h2 {
 
   .walters .secondary-quote {
     padding-right: 18px;
+  }
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .testimonials {
+    animation: none;
+  }
+
+  .testimonial {
+    transition: none;
   }
 }
